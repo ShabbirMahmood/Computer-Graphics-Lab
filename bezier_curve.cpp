@@ -87,6 +87,14 @@ int main()
             py += y[k]*blend;
         }
         putpixel(px,py,WHITE);
+        /////////////////////
+        setcolor(RED);                                         // Printing the Value of 'u' on the Screen
+        settextstyle(SIMPLEX_FONT,HORIZ_DIR,4);
+
+        char msg[100];
+        sprintf(msg, "U = %0.2f",u);
+        outtextxy(550,600, msg);
+        /////////////////////
         delay(1);
     }
 
